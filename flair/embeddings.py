@@ -2637,7 +2637,7 @@ class CharLMEmbeddings(TokenEmbeddings):
 
         # get hidden states from language model
         all_hidden_states_in_lm = self.lm.get_representation(
-            text_sentences, start_marker, end_marker, self.chars_per_chunk
+            text_sentences, start_marker, end_marker
         )
 
         # take first or last hidden states from language model as word representation
